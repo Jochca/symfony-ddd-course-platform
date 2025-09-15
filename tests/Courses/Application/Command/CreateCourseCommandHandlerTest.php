@@ -10,6 +10,7 @@ use App\Courses\Domain\Repository\CourseRepositoryInterface;
 use App\Courses\Domain\ValueObject\CourseId;
 use App\Courses\Domain\Entity\Course;
 use PHPUnit\Framework\TestCase;
+use Ramsey\Uuid\Uuid;
 
 final class CreateCourseCommandHandlerTest extends TestCase
 {
@@ -24,7 +25,7 @@ final class CreateCourseCommandHandlerTest extends TestCase
         $handler = new CreateCourseCommandHandler($repository);
 
         $command = new CreateCourseCommand(
-            id: 'course-123',
+            id: Uuid::uuid4()->toString(),
             title: 'DDD dla zaawansowanych',
             description: 'Poznaj architekturę jak zawodowiec',
             price: 199.99

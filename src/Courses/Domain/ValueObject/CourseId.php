@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace App\Courses\Domain\ValueObject;
 
-final readonly class CourseId
+use App\Shared\Domain\ValueObject\AbstractUuid;
+
+final  class CourseId extends AbstractUuid
 {
-    public function __construct(
-        public string $value
-    ) {
-    }
 }
