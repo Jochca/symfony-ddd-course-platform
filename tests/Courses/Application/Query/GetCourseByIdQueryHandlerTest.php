@@ -13,7 +13,7 @@ use PHPUnit\Framework\TestCase;
 
 final class GetCourseByIdQueryHandlerTest extends TestCase
 {
-    public function test_it_returns_course_read_model_when_course_exists(): void
+    public function testItReturnsCourseReadModelWhenCourseExists(): void
     {
         $courseId = CourseId::generate();
         $repository = new InMemoryCourseReadRepository([

@@ -10,7 +10,7 @@ use Webmozart\Assert\Assert;
 abstract class AbstractUuid implements StringableValueObjectInterface
 {
     final public function __construct(
-        protected readonly string $value
+        protected readonly string $value,
     ) {
         Assert::uuid($value);
     }

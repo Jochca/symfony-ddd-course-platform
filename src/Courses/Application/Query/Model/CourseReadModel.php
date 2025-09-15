@@ -12,5 +12,6 @@ final readonly class CourseReadModel
         public CourseId $id,
         public string $title,
         public string $description,
-    ) {}
+    ) {
+    }
 }

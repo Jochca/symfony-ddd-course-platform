@@ -6,6 +6,6 @@ namespace App\Courses\Domain\ValueObject;
 
 use App\Shared\Domain\ValueObject\AbstractUuid;
 
-final  class CourseId extends AbstractUuid
+final class CourseId extends AbstractUuid
 {
 }

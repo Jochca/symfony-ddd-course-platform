@@ -11,7 +11,8 @@ final readonly class GetCourseByIdQueryHandler
 {
     public function __construct(
         private CourseReadRepositoryInterface $repository,
-    ) {}
+    ) {
+    }
 
     public function __invoke(GetCourseByIdQuery $query): CourseReadModel
     {

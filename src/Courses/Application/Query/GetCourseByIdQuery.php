@@ -10,5 +10,6 @@ final readonly class GetCourseByIdQuery
 {
     public function __construct(
         public CourseId $id,
-    ) {}
+    ) {
+    }
 }

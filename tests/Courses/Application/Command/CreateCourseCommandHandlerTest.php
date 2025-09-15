@@ -7,14 +7,13 @@ namespace App\Tests\Courses\Application\Command;
 use App\Courses\Application\Command\CreateCourseCommand;
 use App\Courses\Application\Command\CreateCourseCommandHandler;
 use App\Courses\Domain\Repository\CourseRepositoryInterface;
-use App\Courses\Domain\ValueObject\CourseId;
 use App\Courses\Domain\Entity\Course;
 use PHPUnit\Framework\TestCase;
 use Ramsey\Uuid\Uuid;
 
 final class CreateCourseCommandHandlerTest extends TestCase
 {
-    public function test_it_creates_a_course_and_saves_it(): void
+    public function testItCreatesACourseAndSavesIt(): void
     {
         $repository = $this->createMock(CourseRepositoryInterface::class);
 

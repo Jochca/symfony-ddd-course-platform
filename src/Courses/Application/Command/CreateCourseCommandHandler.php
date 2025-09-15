@@ -11,7 +11,7 @@ use App\Courses\Domain\ValueObject\CourseId;
 final class CreateCourseCommandHandler
 {
     public function __construct(
-        private CourseRepositoryInterface $repository
+        private CourseRepositoryInterface $repository,
     ) {
     }
 

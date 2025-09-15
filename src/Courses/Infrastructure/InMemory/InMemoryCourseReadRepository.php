@@ -15,7 +15,8 @@ final class InMemoryCourseReadRepository implements CourseReadRepositoryInterfac
      */
     public function __construct(
         private array $courses = [],
-    ) {}
+    ) {
+    }
 
     public function getById(CourseId $id): CourseReadModel
     {
