@@ -10,4 +10,9 @@ use App\Courses\Application\Query\Model\CourseReadModel;
 interface CourseReadRepositoryInterface
 {
     public function getById(CourseId $id): CourseReadModel;
+
+    /**
+     * @return array<CourseReadModel>
+     */
+    public function getAll(): array;
 }

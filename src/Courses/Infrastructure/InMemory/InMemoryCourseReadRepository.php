@@ -22,4 +22,12 @@ final class InMemoryCourseReadRepository implements CourseReadRepositoryInterfac
     {
         return $this->courses[$id->toString()];
     }
+
+    /**
+     * @return array<CourseReadModel>
+     */
+    public function getAll(): array
+    {
+        return array_values($this->courses);
+    }
 }
